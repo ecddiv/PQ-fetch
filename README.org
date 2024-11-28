@@ -13,16 +13,16 @@ Functions for getting data from the [[https://api.oireachtas.ie][oireachteas api
 - Party :: The party affiliation of the asking member
 
 
-* Dataset
+** Dataset Info
 
 
-|   :col-name |          :datatype | :n-valid | :n-missing |       :min |      :mean |                       :mode |       :max | :standard-deviation |       :skew |                        :first |                     :last |
-|-------------|--------------------|---------:|-----------:|------------|------------|-----------------------------|------------|--------------------:|------------:|-------------------------------|---------------------------|
-|        Date | :packed-local-date |   636153 |          0 | 2011-01-12 | 2018-05-17 |                             | 2024-10-24 |       1.2418350E+11 | -0.14252756 |                    2015-01-29 |                2019-12-03 |
-|      Member |            :string |   636153 |          0 |            |            |              Bernard Durkan |            |                     |             |              Michael Moynihan |              Éamon Ó Cuív |
-| Member-Code |            :string |   636153 |          0 |            |            | Bernard-Durkan.D.1981-06-30 |            |                     |             | Michael-Moynihan.D.1997-06-26 | Éamon-Ó-Cuív.S.1989-10-01 |
-|       House |            :string |   636153 |          0 |            |            |                   33rd Dáil |            |                     |             |                     31st Dáil |                 32nd Dáil |
-|       Topic |            :string |   636025 |        128 |            |            |           Covid-19 Pandemic |            |                     |             |        Wind Energy Generation |        National Monuments |
-|        Type |            :string |   636153 |          0 |            |            |                     written |            |                     |             |                          oral |                   written |
-|  Department |            :string |   636153 |          0 |            |            |                      Health |            |                     |             |                Communications |                   Culture |
-|       Party |            :string |   636153 |          0 |            |            |                 Fianna Fáil |            |                     |             |                   Fianna Fáil |               Fianna Fáil |
+| :col-name   | :datatype          | :n-valid | :n-missing |       :min |      :mean | :mode                       |       :max | :standard-deviation |       :skew | :first                        | :last                     |
+|-------------+--------------------+----------+------------+------------+------------+-----------------------------+------------+---------------------+-------------+-------------------------------+---------------------------|
+| Date        | :packed-local-date |   636153 |          0 | 2011-01-12 | 2018-05-17 |                             | 2024-10-24 |       1.2418350E+11 | -0.14252756 | 2015-01-29                    | 2019-12-03                |
+| Member      | :string            |   636153 |          0 |            |            | Bernard Durkan              |            |                     |             | Michael Moynihan              | Éamon Ó Cuív              |
+| Member-Code | :string            |   636153 |          0 |            |            | Bernard-Durkan.D.1981-06-30 |            |                     |             | Michael-Moynihan.D.1997-06-26 | Éamon-Ó-Cuív.S.1989-10-01 |
+| House       | :string            |   636153 |          0 |            |            | 33rd Dáil                   |            |                     |             | 31st Dáil                     | 32nd Dáil                 |
+| Topic       | :string            |   636025 |        128 |            |            | Covid-19 Pandemic           |            |                     |             | Wind Energy Generation        | National Monuments        |
+| Type        | :string            |   636153 |          0 |            |            | written                     |            |                     |             | oral                          | written                   |
+| Department  | :string            |   636153 |          0 |            |            | Health                      |            |                     |             | Communications                | Culture                   |
+| Party       | :string            |   636153 |          0 |            |            | Fianna Fáil                 |            |                     |             | Fianna Fáil                   | Fianna Fáil               |
